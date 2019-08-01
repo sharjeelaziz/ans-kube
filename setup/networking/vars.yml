@@ -1,0 +1,20 @@
+---
+# Mapping of what hardware MAC addresses should be configured with specific IPs.
+mac_address_mapping:
+  "dc:a6:32:03:49:8d":
+    name: ohms1.aimistic.com
+    ip: "192.168.86.210"
+  "dc:a6:32:05:0e:f3":
+    name: ohms2.aimistic.com
+    ip: "192.168.86.211"
+  "b8:27:eb:8c:af:f6":
+    name: ohms3.aimistic.com
+    ip: "192.168.86.212"
+  "b8:27:eb:ca:ce:1b":
+    name: ohms4.aimistic.com
+    ip: "192.168.86.213"
+
+# Nameservers to use in resolv.conf.
+dns_nameservers:
+  - "8.8.8.8"
+  - "8.8.4.4"

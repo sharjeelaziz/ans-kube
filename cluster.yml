@@ -1,0 +1,12 @@
+- hosts: all
+  roles:
+    - common
+    - kubeadm
+
+- hosts: master
+  roles:
+    - master
+
+- hosts: all:!master
+  roles:
+    - workers
